@@ -1,0 +1,46 @@
+# Entorno virtual de Python
+venv/
+env/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+
+# Archivos de configuración de VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# Archivos de configuración de PyCharm/IDEA
+.idea/
+*.iml
+*.iws
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/**/shelf
+.idea/modules.xml
+.idea/**/vcs.xml
+.idea/**/deployment.xml
+.idea/**/temp.xml
+
+# Archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs y cachés de Python
+*.log
+*.pot
+*.mo
+*.swp
+*~
+# Archivos creados por pytest
+.cache/
+
+# Archivos creados por Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Archivos de configuración y caché
+migrations/
+*.sqlite3
