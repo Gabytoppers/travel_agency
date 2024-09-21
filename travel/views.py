@@ -1,6 +1,9 @@
 # travel/views.py
-from django.http import HttpResponse
+from django.shortcuts import render
+from .models import LandingContent
 
 
-def hello_world(request):
-    return HttpResponse("Hello World")
+def landing_page(request):
+    content = LandingContent.objects.all()
+    content = content.first()
+    return render(request, 'landing/landing_page.html', {'landing_content': content})
