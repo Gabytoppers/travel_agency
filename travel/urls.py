@@ -1,8 +1,12 @@
 # travel/urls.py
 from django.urls import path
-from .views import hello_world, contact
+
+from django.contrib import admin
+from .views import contact, home, trip_details
 
 urlpatterns = [
-    path('', hello_world, name='hello_world'),
+    path('admin/', admin.site.urls),  # Ruta para el administrador
     path('contact/', contact, name='contact'),
+    path('', home, name='home'),
+    path('trip-details/', trip_details, name='trip_details'),
 ]
