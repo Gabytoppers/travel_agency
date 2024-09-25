@@ -5,7 +5,8 @@ from django.db import models
 class Trip(models.Model):
     destination = models.CharField(max_length=100)
     description = models.TextField()
-    dates = models.CharField(max_length=100)
+    leaving_date = models.DateField()
+    return_date = models.DateField()
     itinerary = models.TextField()
     image = models.ImageField(upload_to='trip_images/')
 

@@ -88,7 +88,7 @@
             <select name="trip" onchange="this.form.submit()">
                 <option value="">Seleccione un viaje</option>
                 {% for trip in trips %}
-                    <option value="{{ trip.id }}">{{ trip.destination }} - {{ trip.dates }}</option>
+                    <option value="{{ trip.id }}">{{ trip.destination }} - Salida: {{ trip.leaving_date }} - Regreso: {{ trip.return_date }} </option>
                 {% endfor %}
             </select>
         </form>
