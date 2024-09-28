@@ -5,6 +5,7 @@
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+   
 
 }
 
@@ -45,9 +46,13 @@ header {
     font-size: 70px;
 }
 
+.container_titulo {
+    margin-bottom: 300px;
+}
+
 .container {
     text-align: center; /* Centra el texto dentro del contenedor */
-    margin-bottom: 400px;
+    margin-bottom: 80px;
 }
 
 ul {
@@ -106,7 +111,7 @@ li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .travel-card:hover {
@@ -163,7 +168,7 @@ a {
 
     position: relative;
     display: flex;
-    align-items: fit-content;
+    align-items: center;
     height: 304px;
     padding: 10px 0px;
     margin: 0px auto;
@@ -184,7 +189,6 @@ a {
     position: relative;
     width: 210px;
     padding: 0 18px;
-    float: left;
     box-sizing: border-box;
     display: flex;
     height: 100%;
@@ -233,6 +237,37 @@ a {
     text-align: center;
     border: 0;
     cursor: pointer;
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%);
+}
+
+.carrusel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.carrusel-prev {
+    left: -25px; /* Espacio para que no esté pegado al borde izquierdo */
+}
+
+.carrusel-next {
+    margin-top: 1500px;
+    right: -25px; /* Espacio para que no esté pegado al borde derecho */
+}
+
+
+/* .carrusel-arrow {
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
 }
 
 .carrusel-arrow svg {
@@ -246,8 +281,8 @@ a {
 }
 
 .carrusel-next {
-    left: 0s;
-}
+    right: 0s;
+} */
 
 
 
